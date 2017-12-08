@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://llgeek.github.io/blog/sitemap.xml

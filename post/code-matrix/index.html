@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Matrix Related OA Questions - Linlin&#39;s posts | All but dull nag</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Linlin" /><meta name="description" content="Work preparation for interview" />
+<meta name="keywords" content="Spiral Matrix, Toeplitz Matrix, Leetcode, Interview" />
+
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.31.1" />
+
+
+<link rel="canonical" href="https://llgeek.github.io/blog/post/code-matrix/" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/blog/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/blog/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/blog/favicon-16x16.png">
+<link rel="icon" href="/blog/favicon.ico" />
+<link rel="manifest" href="/blog/manifest.json">
+<link rel="mask-icon" href="/blog/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+<link href="/blog/dist/even.min.css?v=2.7.0" rel="stylesheet">
+<link href="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css" rel="stylesheet" crossorigin="anonymous">
+
+<meta property="og:title" content="Matrix Related OA Questions" />
+<meta property="og:description" content="Work preparation for interview" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://llgeek.github.io/blog/post/code-matrix/" />
+
+
+
+<meta property="article:published_time" content="2017-12-18T15:53:45-06:00"/>
+
+<meta property="article:modified_time" content="2017-12-18T15:53:45-06:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="Matrix Related OA Questions">
+<meta itemprop="description" content="Work preparation for interview">
+
+
+<meta itemprop="datePublished" content="2017-12-18T15:53:45-06:00" />
+<meta itemprop="dateModified" content="2017-12-18T15:53:45-06:00" />
+<meta itemprop="wordCount" content="1405">
+
+
+
+<meta itemprop="keywords" content="Spiral Matrix,Toeplitz Matrix,Leetcode,Interview," />
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Matrix Related OA Questions"/>
+<meta name="twitter:description" content="Work preparation for interview"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/blog/" class="logo">Life is never easy, make it simpler!</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/blog/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/blog/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/blog/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/blog/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/blog/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/blog/" class="logo">Life is never easy, make it simpler!</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/blog/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/blog/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/blog/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/blog/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/blog/about/">About</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Matrix Related OA Questions</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2017-12-18 </span>
+        <div class="post-category">
+            
+              <a href="/blog/categories/interview/"> Interview </a>
+            
+              <a href="/blog/categories/work/"> Work </a>
+            
+          </div>
+        <span class="more-meta"> 1405 word </span>
+        <span class="more-meta"> 7 min read </span>
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#spiral-matrix">Spiral Matrix</a>
+<ul>
+<li><a href="#problem-statement">Problem Statement</a></li>
+<li><a href="#solutions">Solutions</a></li>
+</ul></li>
+<li><a href="#spiral-matrix-ii">Spiral Matrix II</a>
+<ul>
+<li><a href="#problem-statement-1">Problem Statement</a></li>
+<li><a href="#solution">Solution</a></li>
+</ul></li>
+<li><a href="#toeplitz-matrix">Toeplitz Matrix</a>
+<ul>
+<li><a href="#problem-statement-2">Problem Statement</a></li>
+<li><a href="#solutions-1">Solutions</a></li>
+</ul></li>
+<li><a href="#reference">Reference</a></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      <p>Today I found an interesting OA question related to printing matrix in spiral order, and had a shot at it. Simply googling it I find another question related to checking Toeplitz Matrix. I will keep updating this post once I found more interesting questions related to matrix operations.</p>
+
+<p></p>
+
+<h2 id="spiral-matrix">Spiral Matrix</h2>
+
+<h3 id="problem-statement">Problem Statement</h3>
+
+<p>Here goes the problem description related to <em>Spiral Matrix</em><sup><a href="#ref01">[1]</a></sup>:</p>
+
+<blockquote>
+<p>Given a matrix of $m \times n$ elements ($m$ rows,  $n$ columns), return all elements of the matrix in spiral order. For example:</p>
+</blockquote>
+
+<pre><code class="language-text">Input:
+[
+ [ 1, 2, 3 ],
+ [ 4, 5, 6 ],
+ [ 7, 8, 9 ]
+]
+
+Output:
+[1, 2, 3, 6, 9, 8, 7, 4, 5]
+</code></pre>
+
+<h3 id="solutions">Solutions</h3>
+
+<p>Solutions to this question should be trival. The key idea is to manipulate the matrix element index in spiral order. Observing the moving direction for the spiral order, there should be four cases:</p>
+
+<ol>
+<li><p>Moving left:<br />
+Previously the direction should be up, until it reaches the visited element, then tunning left.</p></li>
+
+<li><p>Moving down:<br />
+Previously the direction should be left, until it reaches the visited element, then tunning down.</p></li>
+
+<li><p>Moving right: <br />
+Previously the direction should be down, until it reaches the visited element, then tunning right.</p></li>
+
+<li><p>Moving up:<br />
+Previously the direction should be right, until it reaches the visited element, then tunning up.</p></li>
+</ol>
+
+<p>Also, if we say going through above mentioned fource cases as $1$ loop, then after each loop we will reduce the number of elements to be visited by $2$ for each case. More Specifically, the number of elements to be printed in each loop for each case should be:</p>
+
+<ol>
+<li><p>Moving left:<br />
+$n, n-2, n-4, &hellip;, $</p></li>
+
+<li><p>Moving down:<br />
+$m-1, m-3, &hellip;, $</p></li>
+
+<li><p>Moving right: <br />
+$n-1, n-3, &hellip;, $</p></li>
+
+<li><p>Moving up:<br />
+$m-2, m-4, &hellip;, $</p></li>
+</ol>
+
+<p>We can enumerate the number of total loops as well. One of the four cases will first end up with $0$ for no doubt, which indicates the ending of the loop. So we get:</p>
+
+<p>$$LOOPS = \min{\lceil \frac{n-1}{2} \rceil, \lceil \frac{m-2}{2} \rceil}$$</p>
+
+<p>Now I firstly show the most trival <code>java</code> version code below:</p>
+
+<pre><code class="language-java">class Solution {
+    public List&lt;Integer&gt; spiralOrder(int[][] matrix) {
+    	List&lt;Integer&gt; result = new ArrayList&lt;Integer&gt;();
+        if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
+            return result; 
+        }
+        int m = matrix.length;
+        int n = matrix[0].length;
+        int printednum = 0;
+        int loopnum = (int) (Math.ceil(((float)m-2)/2) &lt; Math.ceil(((float)n-1)/2) ? Math.ceil(((float)m-2)/2) : Math.ceil(((float)n-1)/2));
+        int tovisitnum = 0;
+        for (int i = 0; i &lt; loopnum; i++) {
+            /** moving left**/
+            tovisitnum = 0;
+            while (tovisitnum != n - 2 * i) {
+                result.add(matrix[i][tovisitnum+i]);
+                tovisitnum ++;
+                printednum ++;
+            }
+            /** moving down **/
+            tovisitnum = 0;
+            while (tovisitnum != m-1-2*i) {
+                result.add(matrix[tovisitnum + i+1][n-1-i]);
+                tovisitnum ++;
+                printednum ++;
+            }
+            
+            /** Moving right **/
+            tovisitnum = 0;
+            while (tovisitnum != n-1-2*i) {
+                result.add(matrix[m-1-i][n-2-i-tovisitnum]);
+                tovisitnum ++;
+                printednum ++;
+            }
+            
+            /** Moving up **/
+            tovisitnum = 0;
+            while (tovisitnum != m-2-2*i) {
+                result.add(matrix[m-2-i-tovisitnum][i]);
+                tovisitnum ++;
+                printednum ++;
+            }
+        }
+        //finish spiral order printing
+        if (printednum == m * n)
+            return result;
+        else {
+        	// moving right
+            tovisitnum = 0;
+            while (tovisitnum != n - 2 * loopnum) {
+                result.add(matrix[loopnum][tovisitnum+loopnum]);
+                tovisitnum ++;
+                printednum ++;
+            }
+            //moving down
+            if (printednum &lt; m * n) {
+                tovisitnum = 0;
+                while (tovisitnum != m-1-2*loopnum) {
+                    result.add(matrix[tovisitnum + loopnum+1][n-1-loopnum]);
+                    tovisitnum ++;
+                    printednum ++;
+                }
+            }
+            //moving left
+            if (printednum &lt; m * n) {
+                tovisitnum = 0;
+                while (tovisitnum != n-1-2*loopnum) {
+                    result.add(matrix[m-1-loopnum][n-2-loopnum-tovisitnum]);
+                    tovisitnum ++;
+                    printednum ++;
+                }
+            }
+        }
+        return result;
+    }
+}
+</code></pre>
+
+<p>This solution simply enumerates all possible cases and consider each corresponding operations. It&rsquo;s trival but the code is a bit tedious. We can simply the code by considering the printing layer by layer. We can just consider printing the elemnts in each layer and iterate it layer by layer. An very good picture in <a href="https://leetcode.com/problems/spiral-matrix/solution/">leetcode solution</a> illustrates the basic idea. I directly cite that picture here:</p>
+
+<p><img src="https://ws4.sinaimg.cn/large/006tKfTcgy1fmlv7701fqj30yu09egm9.jpg" alt="hugo even showcase" /></p>
+
+<p>Based on this idea, the simplified <code>python</code> code is below:</p>
+
+<pre><code class="language-python">class Solution(object):
+    def spiralOrder(self, matrix):
+        def spiral_coords(r1, c1, r2, c2):
+            for c in range(c1, c2 + 1):
+                yield r1, c
+            for r in range(r1 + 1, r2 + 1):
+                yield r, c2
+            if r1 &lt; r2 and c1 &lt; c2:
+                for c in range(c2 - 1, c1, -1):
+                    yield r2, c
+                for r in range(r2, r1, -1):
+                    yield r, c1
+
+        if not matrix: return []
+        ans = []
+        r1, r2 = 0, len(matrix) - 1
+        c1, c2 = 0, len(matrix[0]) - 1
+        while r1 &lt;= r2 and c1 &lt;= c2:
+            for r, c in spiral_coords(r1, c1, r2, c2):
+                ans.append(matrix[r][c])
+            r1 += 1; r2 -= 1
+            c1 += 1; c2 -= 1
+        return ans
+
+</code></pre>
+
+<h2 id="spiral-matrix-ii">Spiral Matrix II</h2>
+
+<h3 id="problem-statement-1">Problem Statement</h3>
+
+<p>Here goes the problem description of another version problem about <em>Spiral Matrix</em> in leetcode<sup><a href="#ref02">[2]</a></sup>:</p>
+
+<blockquote>
+<p>Given an integer $n$, generate a square matrix filled with elements from $1$ to $n^2$ in spiral order.</p>
+
+<p>For example, given $n = 3$,</p>
+
+<p>You should return the following matrix:</p>
+</blockquote>
+
+<pre><code class="language-text">[
+ [ 1, 2, 3 ],
+ [ 8, 9, 4 ],
+ [ 7, 6, 5 ]
+]
+</code></pre>
+
+<h3 id="solution">Solution</h3>
+
+<p>This is exactly the same with the 1st version of Spiral Matrix. By traversing the result matrix exactly the same way when we traverse the input matrix in 1st question, we can generate the matrix filling with elements in spiral order. Here goes the <code>java</code> solution:</p>
+
+<pre><code class="language-java">class Solution {
+    public int[][] generateMatrix(int n) {
+        int[][] result = new int[n][n];
+        if (n &lt;= 0)
+            return result;
+
+        int colbegin = 0, colend = n-1;
+        int rowbegin = 0, rowend = n-1;
+        int curval = 1;
+        while (colbegin &lt;= colend &amp;&amp; rowbegin &lt;= rowend) {
+            for (int i = colbegin; i &lt;= colend; i++) {
+                result[rowbegin][i] = curval++;
+            }
+            rowbegin++;
+            for (int i = rowbegin; i &lt;= rowend; i++) {
+                result[i][colend] = curval++;
+            }
+            colend --;
+            if (colbegin &lt; colend &amp;&amp; rowbegin &lt; rowend) {
+                for (int i = colend; i &gt;= colbegin; i--) {
+                    result[rowend][i] = curval++;
+                }
+                rowend --;
+                for (int i = rowend; i &gt;= rowbegin; i--) {
+                    result[i][colbegin] = curval++;
+                }
+                colbegin++;
+            }
+        }
+        return result;
+    }
+}
+</code></pre>
+
+<h2 id="toeplitz-matrix">Toeplitz Matrix</h2>
+
+<h3 id="problem-statement-2">Problem Statement</h3>
+
+<p>The checking whether a given matrix is Toeplitz or not can be found in GeeksforGeeks<sup><a href="#ref03">[3]</a></sup>:</p>
+
+<blockquote>
+<p>Given a square matrix, find if it’s a Toeplitz matrix or not. A Toeplitz (or diagonal-constant) matrix is a matrix in which each descending diagonal from left to right is constant, <em>i.e.</em>, all elements in a diagonal are same.</p>
+
+<p>In general, any $n\times n$ matrix $mat[][]$ is a Toeplitz matrix if every cell $mat[i][j]$ is same as $mat[i-1][j-1]$, $mat[i+1][j+1]$, $mat[i-2][j-2]$, $mat[i+2][j+2]$, .. for every cell $mat[i][j]$ and all the valid cells $mat[i+k][j+k]$ or $mat[i-k][j-k]$.</p>
+
+<p>For example:</p>
+</blockquote>
+
+<pre><code class="language-text">Input: mat[N][N] = {{ 6, 7, 8},
+                    { 4, 6, 7},
+                    { 1, 4, 6}},
+Output : True;
+Values in all diagonals are same.
+
+Input: mat[N][N] = {{ 6, 7, 8, 9 },
+                    { 4, 6, 7, 8 },
+                    { 1, 4, 6, 7 },
+                    { 0, 1, 4, 6 },
+                    { 2, 0, 1, 4 }};
+Output : True;
+
+Input: mat[N][N] = {{ 6, 3, 8},
+                    { 4, 9, 7},
+                    { 1, 4, 6}},
+Output : False;
+
+</code></pre>
+
+<h3 id="solutions-1">Solutions</h3>
+
+<pre><code class="language-java">// Java program to check whether given matrix
+// is a Toeplitz matrix or not
+import java.io.*;
+ 
+class GFG 
+{
+    public static int N = 5;
+    public static int M = 4;
+     
+    // Function to check if all elements present in
+    // descending diagonal starting from position
+    // (i, j) in the matrix are all same or not
+    static boolean checkDiagonal(int mat[][], int i, int j)
+    {
+        int res = mat[i][j];
+        while (++i &lt; N &amp;&amp; ++j &lt; M)
+        {
+            // mismatch found
+            if (mat[i][j] != res)
+                return false;
+        }
+  
+        // we only reach here when all elements
+        // in given diagonal are same
+        return true;
+    }
+     
+    // Function to check whether given matrix is a
+    // Toeplitz matrix or not
+    static boolean isToepliz(int mat[][])
+    {
+        // do for each element in first row
+        for (int i = 0; i &lt; M; i++)
+        {
+            // check descending diagonal starting from
+            // position (0, j) in the matrix
+            if (!checkDiagonal(mat, 0, i))
+                return false;
+        }
+  
+        // do for each element in first column
+        for (int i = 1; i &lt; N; i++)
+        {
+            // check descending diagonal starting from
+            // position (i, 0) in the matrix
+            if (!checkDiagonal(mat, i, 0))
+                return false;
+        }
+  
+        // we only reach here when each descending
+        // diagonal from left to right is same
+        return true;
+    }
+
+</code></pre>
+
+<h2 id="reference">Reference</h2>
+
+<ol>
+<li><a id="ref01"><a href="https://leetcode.com/problems/spiral-matrix/description/">Leetcode Spiral Matrix</a></a></li>
+<li><a id="ref02"><a href="https://leetcode.com/problems/spiral-matrix-ii/description/">Leetcode Spiral Matrix II</a></a></li>
+<li><a id="ref03"><a href="http://www.geeksforgeeks.org/find-if-given-matrix-is-toeplitz-or-not/">Toeplitz Matrix</a></a></li>
+</ol>
+    </div>
+
+    
+    
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          
+          <a href="/blog/tags/spiral-matrix/">Spiral Matrix</a>
+          
+          <a href="/blog/tags/toeplitz-matrix/">Toeplitz Matrix</a>
+          
+          <a href="/blog/tags/leetcode/">Leetcode</a>
+          
+          <a href="/blog/tags/interview/">Interview</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+        
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:your@liamchen.cs@gmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://www.linkedin.com/in/linlin-chen-60701091/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://github.com/llgeek" class="iconfont icon-github" title="github"></a>
+  <a href="https://llgeek.github.io/blog/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <span class="copyright-year">
+    &copy; 
+    2017
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">Linlin Chen</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script src="/blog/lib/highlight/highlight.pack.js?v=20171001"></script>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.bootcss.com/slideout/1.0.1/slideout.min.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/blog/dist/even.min.js?v=2.7.0"></script>
+<script type="text/javascript">
+    window.MathJax = {
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+
+  
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});</script>
+
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>

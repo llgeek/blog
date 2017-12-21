@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Interview on Linlin&#39;s posts | All but dull nag</title>
-    <link>https://llgeek.github.io/blog/tags/interview/</link>
-    <description>Recent content in Interview on Linlin&#39;s posts | All but dull nag</description>
+    <title>String on Linlin&#39;s posts | All but dull nag</title>
+    <link>https://llgeek.github.io/blog/tags/string/</link>
+    <description>Recent content in String on Linlin&#39;s posts | All but dull nag</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 19 Dec 2017 16:23:10 -0600</lastBuildDate>
     
-	<atom:link href="https://llgeek.github.io/blog/tags/interview/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://llgeek.github.io/blog/tags/string/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,17 +20,6 @@
       <description>&lt;p&gt;Today I am gonna to go through some string related OA questions. I will keep updating this post when I get new string questions.&lt;/p&gt;
 
 &lt;p&gt;String is one of the most common primitive data type in most programming languages. Some very interesting questions about string manuplications or checkings come out. Without further ado, let&amp;rsquo;s get started!&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Matrix Related OA Questions</title>
-      <link>https://llgeek.github.io/blog/post/code-matrix/</link>
-      <pubDate>Mon, 18 Dec 2017 15:53:45 -0600</pubDate>
-      
-      <guid>https://llgeek.github.io/blog/post/code-matrix/</guid>
-      <description>&lt;p&gt;Today I found an interesting OA question related to printing matrix in spiral order, and had a shot at it. Simply googling it I find another question related to checking Toeplitz Matrix. I will keep updating this post once I found more interesting questions related to matrix operations.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>

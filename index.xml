@@ -17,14 +17,27 @@
       <pubDate>Thu, 07 Dec 2017 21:38:52 +0800</pubDate>
       
       <guid>https://llgeek.github.io/blog/about/</guid>
-      <description> About Me  Third-year Permanent head Damager.
+      <description>About Me  Third-year Permanent head Damager.
 Potential bug-free code farmer probably someday. (no idea when 😅)
 Love taking challenges all the way, yet love giving up halfway more.
 Enjoy practical implementations more than theorey proof.
 Procrastinator with always struggling in deadline.
 Nag for the worst, wish for the best.
-Like me click me.
- </description>
+Utilimate Dream: write bug-free code, contribute to significant open source projects, travel around the world!
+Like me click me.</description>
+    </item>
+    
+    <item>
+      <title>String Related OA Questions</title>
+      <link>https://llgeek.github.io/blog/post/code-string/</link>
+      <pubDate>Tue, 19 Dec 2017 16:23:10 -0600</pubDate>
+      
+      <guid>https://llgeek.github.io/blog/post/code-string/</guid>
+      <description>&lt;p&gt;Today I am gonna to go through some string related OA questions. I will keep updating this post when I get new string questions.&lt;/p&gt;
+
+&lt;p&gt;String is one of the most common primitive data type in most programming languages. Some very interesting questions about string manuplications or checkings come out. Without further ado, let&amp;rsquo;s get started!&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
